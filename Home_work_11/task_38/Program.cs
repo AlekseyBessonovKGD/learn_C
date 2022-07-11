@@ -23,20 +23,17 @@ double find_differ(double[] array_for_differ)
     double min = 1;
     double max = 0;
     double diff = 0;
-    for (int i = 0; i < array_for_differ.Length; i++)
-    {
-        if(array_for_differ[i] > max)
+for (int i = 0; i < array_for_differ.Length; i++)
+{
+    if(array_for_differ[i] > max)
         {
             max = array_for_differ[i];
         }
-    }
-    for (int i = 0; i < array_for_differ.Length; i++)
-    {
-        if(array_for_differ[i] < min)
+    if(array_for_differ[i] < min)
         {
             min = array_for_differ[i];
         }
-    }
+}
     diff = Math.Round(max - min, 2);
     return diff;
 }

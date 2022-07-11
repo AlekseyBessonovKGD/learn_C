@@ -27,6 +27,7 @@ void fill_array(int[] argument_array)
 digits_in_number(number);
 int[] array_of_number = new int[number];
 fill_array(array_of_number);
+bool conditions = true;
 
 for (int i = 0; i < digits_in_number(number) / 2; i++)
 {
@@ -34,12 +35,12 @@ for (int i = 0; i < digits_in_number(number) / 2; i++)
     if (array_of_number[i] != array_of_number[j])
     {
         Console.WriteLine("нет");
+        conditions = false;
         break;
     }
-    numbers_of_matches = i + 1;
 }
 
-if (numbers_of_matches == digits_in_number(number) / 2)
+if (conditions) 
 {
     Console.WriteLine("да");
 }
