@@ -6,7 +6,7 @@
 Сумма элементов главной диагонали: 1+9+2 = 12
  */
 
- int[,] fillArray(int rowsCount, int columnCount)
+int[,] fillArray(int rowsCount, int columnCount)
 {
     int[,] result_array = new int[rowsCount,columnCount];
     for (int i = 0; i < rowsCount; i++)
