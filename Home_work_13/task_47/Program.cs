@@ -13,7 +13,7 @@ double[,] newRandomArray(int rows, int columns)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            array[i,j] = Math.Round(new Random().NextDouble() * 10, 1);
+            array[i,j] = Math.Round((new Random().NextDouble() * new Random().Next(-10,10)),1);
         }
     }
     return array;
